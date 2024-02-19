@@ -1,0 +1,24 @@
+GET http://localhost:3333/pessoas
+
+###
+POST http://localhost:3333/pessoas
+Content-Type: application/json
+
+{
+    "nome": "Renan",
+    "idade": 32,
+    "nacionalidade": "Brasileiro"
+}
+
+###
+PUT http://localhost:3333/pessoas/e1562d47-844b-467e-a0c8-b99adbd6f995
+Content-Type: application/json
+
+{
+    "nome": "Manoel",
+    "idade": 35,
+    "nacionalidade": "Argentino"
+}
+
+###
+DELETE http://localhost:3333/pessoas/e1562d47-844b-467e-a0c8-b99adbd6f995
